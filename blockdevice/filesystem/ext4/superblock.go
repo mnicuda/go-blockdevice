@@ -6,7 +6,7 @@ package ext4
 
 import (
 	"unsafe"
-    "fmt"
+	"fmt"
 )
 
 const (
@@ -40,9 +40,9 @@ func (sb *SuperBlock) Type() string {
 	return "ext4"
 }
 
-// Merlin Label implements the SuperBlocker interface.
+// FSLabel implements the SuperBlocker interface.
 func (sb *SuperBlock) FSLabel() string {
-	return fmt.Sprintf("%s", sb.Label) 
+	return fmt.Sprintf("%s", sb.Label)
 }
 
 // Encrypted implements the SuperBlocker interface.

@@ -14,11 +14,11 @@ import (
 	"github.com/siderolabs/go-retry/retry"
 
 	"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/ext4"
-//"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/iso9660"
-//"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/luks"
-//"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/msdos"
-//"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/vfat"
-//"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/xfs"
+	"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/iso9660"
+	"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/luks"
+	"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/msdos"
+	"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/vfat"
+	"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/xfs"
 )
 
 // SuperBlocker describes the requirements for file system super blocks.
@@ -26,7 +26,7 @@ type SuperBlocker interface {
 	Is() bool
 	Offset() int64
 	Type() string
-    FSLabel() string // Merlin
+	FSLabel() string
 	Encrypted() bool
 }
 
@@ -64,11 +64,11 @@ func Probe(path string) (SuperBlocker, error) { //nolint:ireturn
 	defer f.Close()
 
 	superblocks := []SuperBlocker{
-		//Merlin&iso9660.SuperBlock{},
-		//&vfat.SuperBlock{},
-		//&msdos.SuperBlock{},
-		//&xfs.SuperBlock{},
-		//&luks.SuperBlock{},
+		&iso9660.SuperBlock{},
+		&vfat.SuperBlock{},
+		&msdos.SuperBlock{},
+		&xfs.SuperBlock{},
+		&luks.SuperBlock{},
 		&ext4.SuperBlock{},
 	}
 

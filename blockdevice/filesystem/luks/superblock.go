@@ -49,6 +49,11 @@ func (sb *SuperBlock) Type() string {
 	return fmt.Sprintf("luks%d", sb.Version)
 }
 
+// Label implements the SuperBlocker interface.
+func (sb *SuperBlock) FSLabel() string {
+	return fmt.Sprintf("%s", sb.Label)
+}
+
 // Encrypted implements the SuperBlocker interface.
 func (sb *SuperBlock) Encrypted() bool {
 	return true

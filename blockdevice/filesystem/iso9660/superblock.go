@@ -4,7 +4,10 @@
 
 package iso9660
 
-import "bytes"
+import (
+	"bytes"
+	"fmt"
+)
 
 const (
 	// Magic is the ISO 9660 magic signature.
@@ -47,9 +50,8 @@ func (sb *SuperBlock) Type() string {
 }
 
 // FSLabel implements the SuperBlocker interface.
-
-func (sb *SuperBlock) FSLabel() [0x10]uint8 {
-	return // TODO 
+func (sb *SuperBlock) FSLabel() string {
+	return fmt.Sprintf("%s", sb.VolumeID)
 }
 
 // Encrypted implements the SuperBlocker interface.

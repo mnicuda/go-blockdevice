@@ -6,6 +6,7 @@ package msdos
 
 import (
 	"bytes"
+	"fmt"
 )
 
 const (
@@ -41,6 +42,11 @@ func (sb *SuperBlock) Offset() int64 {
 func (sb *SuperBlock) Type() string {
 	// using `vfat` here, as it's the filesystem type in Linux
 	return "vfat"
+}
+
+// FSLabel implements the SuperBlocker interface.
+func (sb *SuperBlock) FSLabel() string {
+	return fmt.Sprintf("%s", sb.Label) 
 }
 
 // Encrypted implements the SuperBlocker interface.

@@ -6,6 +6,7 @@ package vfat
 
 import (
 	"bytes"
+	"fmt"
 )
 
 const (
@@ -59,6 +60,11 @@ func (sb *SuperBlock) Offset() int64 {
 // Type implements the SuperBlocker interface.
 func (sb *SuperBlock) Type() string {
 	return "vfat"
+}
+
+// FSLabel implements the SuperBlocker interface.
+func (sb *SuperBlock) FSLabel() string {
+	return fmt.Sprintf("%s", sb.Label)
 }
 
 // Encrypted implements the SuperBlocker interface.

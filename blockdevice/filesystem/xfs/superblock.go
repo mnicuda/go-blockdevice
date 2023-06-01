@@ -4,6 +4,10 @@
 
 package xfs
 
+import (
+	"fmt"
+)
+
 const (
 	// Magic is the XFS magic number.
 	Magic = 0x58465342
@@ -58,6 +62,11 @@ func (sb *SuperBlock) Offset() int64 {
 // Type implements the SuperBlocker interface.
 func (sb *SuperBlock) Type() string {
 	return "xfs"
+}
+
+// FSLabel implements the SuperBlocker interface.
+func (sb *SuperBlock) FSLabel() string {
+	return fmt.Sprintf("%s", sb.Fname)
 }
 
 // Encrypted implements the SuperBlocker interface.
