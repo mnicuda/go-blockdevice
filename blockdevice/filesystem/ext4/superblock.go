@@ -39,6 +39,11 @@ func (sb *SuperBlock) Type() string {
 	return "ext4"
 }
 
+// Merlin Label implements the SuperBlocker interface.
+func (sb *SuperBlock) FSLabel() [0x10]uint8 {
+	return sb.Label
+}
+
 // Encrypted implements the SuperBlocker interface.
 func (sb *SuperBlock) Encrypted() bool {
 	return false

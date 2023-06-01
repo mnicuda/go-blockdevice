@@ -14,11 +14,11 @@ import (
 	"github.com/siderolabs/go-retry/retry"
 
 	"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/ext4"
-	"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/iso9660"
-	"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/luks"
-	"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/msdos"
-	"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/vfat"
-	"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/xfs"
+//"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/iso9660"
+//"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/luks"
+//"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/msdos"
+//"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/vfat"
+//"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/xfs"
 )
 
 // SuperBlocker describes the requirements for file system super blocks.
@@ -26,6 +26,7 @@ type SuperBlocker interface {
 	Is() bool
 	Offset() int64
 	Type() string
+    FSLabel() [0x10]uint8 // Merlin
 	Encrypted() bool
 }
 
@@ -63,11 +64,11 @@ func Probe(path string) (SuperBlocker, error) { //nolint:ireturn
 	defer f.Close()
 
 	superblocks := []SuperBlocker{
-		&iso9660.SuperBlock{},
-		&vfat.SuperBlock{},
-		&msdos.SuperBlock{},
-		&xfs.SuperBlock{},
-		&luks.SuperBlock{},
+		//Merlin&iso9660.SuperBlock{},
+		//&vfat.SuperBlock{},
+		//&msdos.SuperBlock{},
+		//&xfs.SuperBlock{},
+		//&luks.SuperBlock{},
 		&ext4.SuperBlock{},
 	}
 

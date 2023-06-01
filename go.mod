@@ -1,4 +1,4 @@
-module github.com/siderolabs/go-blockdevice
+module github.com/mnicuda/go-blockdevice
 
 go 1.20
 
