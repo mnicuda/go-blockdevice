@@ -10,15 +10,15 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice"
-	"github.com/siderolabs/go-blockdevice/blockdevice/filesystem"
-	"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/ext4"
-	"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/iso9660"
-	"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/msdos"
-	"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/vfat"
-	"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/xfs"
-	"github.com/siderolabs/go-blockdevice/blockdevice/partition/gpt"
-	"github.com/siderolabs/go-blockdevice/blockdevice/util"
+	"github.com/mnicuda/go-blockdevice/blockdevice"
+	"github.com/mnicuda/go-blockdevice/blockdevice/filesystem"
+	"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/ext4"
+	"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/iso9660"
+	"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/msdos"
+	"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/vfat"
+	"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/xfs"
+	"github.com/mnicuda/go-blockdevice/blockdevice/partition/gpt"
+	"github.com/mnicuda/go-blockdevice/blockdevice/util"
 )
 
 // ProbedBlockDevice represents a probed block device.

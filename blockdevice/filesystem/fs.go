@@ -13,12 +13,12 @@ import (
 
 	"github.com/siderolabs/go-retry/retry"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/ext4"
-//"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/iso9660"
-//"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/luks"
-//"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/msdos"
-//"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/vfat"
-//"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/xfs"
+	"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/ext4"
+//"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/iso9660"
+//"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/luks"
+//"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/msdos"
+//"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/vfat"
+//"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/xfs"
 )
 
 // SuperBlocker describes the requirements for file system super blocks.

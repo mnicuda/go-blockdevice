@@ -17,8 +17,8 @@ import (
 	"github.com/siderolabs/go-retry/retry"
 	"golang.org/x/sys/unix"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice/lba"
-	"github.com/siderolabs/go-blockdevice/blockdevice/util"
+	"github.com/mnicuda/go-blockdevice/blockdevice/lba"
+	"github.com/mnicuda/go-blockdevice/blockdevice/util"
 )
 
 // InformKernelOfAdd invokes the BLKPG_ADD_PARTITION ioctl.

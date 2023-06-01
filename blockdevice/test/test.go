@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice/loopback"
+	"github.com/mnicuda/go-blockdevice/blockdevice/loopback"
 )
 
 // BlockDeviceSuite is a common base for all tests that rely on loopback device creation.

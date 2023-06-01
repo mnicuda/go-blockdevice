@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice/endianness"
+	"github.com/mnicuda/go-blockdevice/blockdevice/endianness"
 )
 
 var (

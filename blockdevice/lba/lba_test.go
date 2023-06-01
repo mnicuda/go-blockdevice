@@ -9,7 +9,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice/lba"
+	"github.com/mnicuda/go-blockdevice/blockdevice/lba"
 )
 
 func TestAlignToRecommended(t *testing.T) {

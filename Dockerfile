@@ -59,7 +59,7 @@ RUN FILES="$(gofumpt -l .)" && test -z "${FILES}" || (echo -e "Source code is no
 
 # runs goimports
 FROM base AS lint-goimports
-RUN FILES="$(goimports -l -local github.com/siderolabs/go-blockdevice .)" && test -z "${FILES}" || (echo -e "Source code is not formatted with 'goimports -w -local github.com/siderolabs/go-blockdevice .':\n${FILES}"; exit 1)
+RUN FILES="$(goimports -l -local github.com/mnicuda/go-blockdevice .)" && test -z "${FILES}" || (echo -e "Source code is not formatted with 'goimports -w -local github.com/mnicuda/go-blockdevice .':\n${FILES}"; exit 1)
 
 # runs golangci-lint
 FROM base AS lint-golangci-lint

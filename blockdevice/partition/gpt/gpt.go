@@ -13,8 +13,8 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice/blkpg"
-	"github.com/siderolabs/go-blockdevice/blockdevice/lba"
+	"github.com/mnicuda/go-blockdevice/blockdevice/blkpg"
+	"github.com/mnicuda/go-blockdevice/blockdevice/lba"
 )
 
 const (

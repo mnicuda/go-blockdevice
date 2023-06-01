@@ -14,10 +14,10 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice"
-	"github.com/siderolabs/go-blockdevice/blockdevice/partition/gpt"
-	"github.com/siderolabs/go-blockdevice/blockdevice/probe"
-	"github.com/siderolabs/go-blockdevice/blockdevice/test"
+	"github.com/mnicuda/go-blockdevice/blockdevice"
+	"github.com/mnicuda/go-blockdevice/blockdevice/partition/gpt"
+	"github.com/mnicuda/go-blockdevice/blockdevice/probe"
+	"github.com/mnicuda/go-blockdevice/blockdevice/test"
 )
 
 type ProbeSuite struct {

@@ -13,11 +13,11 @@ import (
 	"github.com/stretchr/testify/suite"
 	"golang.org/x/sys/unix"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice"
-	"github.com/siderolabs/go-blockdevice/blockdevice/encryption"
-	"github.com/siderolabs/go-blockdevice/blockdevice/encryption/luks"
-	"github.com/siderolabs/go-blockdevice/blockdevice/partition/gpt"
-	"github.com/siderolabs/go-blockdevice/blockdevice/test"
+	"github.com/mnicuda/go-blockdevice/blockdevice"
+	"github.com/mnicuda/go-blockdevice/blockdevice/encryption"
+	"github.com/mnicuda/go-blockdevice/blockdevice/encryption/luks"
+	"github.com/mnicuda/go-blockdevice/blockdevice/partition/gpt"
+	"github.com/mnicuda/go-blockdevice/blockdevice/test"
 )
 
 const (

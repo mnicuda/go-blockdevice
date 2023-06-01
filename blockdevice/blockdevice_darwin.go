@@ -10,7 +10,7 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice/partition/gpt"
+	"github.com/mnicuda/go-blockdevice/blockdevice/partition/gpt"
 )
 
 // BlockDevice represents a block device.

@@ -9,7 +9,7 @@ import (
 	"flag"
 	"log"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice"
+	"github.com/mnicuda/go-blockdevice/blockdevice"
 )
 
 func main() {

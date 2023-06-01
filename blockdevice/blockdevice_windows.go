@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice/partition/gpt"
+	"github.com/mnicuda/go-blockdevice/blockdevice/partition/gpt"
 )
 
 // BlockDevice represents a block device.

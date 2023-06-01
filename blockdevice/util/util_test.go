@@ -8,7 +8,7 @@ package util_test
 import (
 	"testing"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice/util"
+	"github.com/mnicuda/go-blockdevice/blockdevice/util"
 )
 
 func Test_PartNo(t *testing.T) {

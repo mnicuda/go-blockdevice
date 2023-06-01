@@ -19,9 +19,9 @@ import (
 	"github.com/siderolabs/go-cmd/pkg/cmd"
 	"golang.org/x/sys/unix"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice/encryption"
-	"github.com/siderolabs/go-blockdevice/blockdevice/filesystem/luks"
-	"github.com/siderolabs/go-blockdevice/blockdevice/util"
+	"github.com/mnicuda/go-blockdevice/blockdevice/encryption"
+	"github.com/mnicuda/go-blockdevice/blockdevice/filesystem/luks"
+	"github.com/mnicuda/go-blockdevice/blockdevice/util"
 )
 
 // Cipher LUKS2 cipher type.

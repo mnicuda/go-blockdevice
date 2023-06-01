@@ -2,7 +2,7 @@
 commit = "HEAD"
 
 project_name = "go-blockdevice"
-github_repo = "siderolabs/go-blockdevice"
+github_repo = "mnicuda/go-blockdevice"
 match_deps = "^github.com/(siderolabs/[a-zA-Z0-9-]+)$"
 
 # previous = -

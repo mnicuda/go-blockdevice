@@ -13,9 +13,9 @@ import (
 	"github.com/google/uuid"
 	"golang.org/x/text/encoding/unicode"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice/endianness"
-	"github.com/siderolabs/go-blockdevice/blockdevice/filesystem"
-	"github.com/siderolabs/go-blockdevice/blockdevice/util"
+	"github.com/mnicuda/go-blockdevice/blockdevice/endianness"
+	"github.com/mnicuda/go-blockdevice/blockdevice/filesystem"
+	"github.com/mnicuda/go-blockdevice/blockdevice/util"
 )
 
 // Partitions represents the GPT partitions array.

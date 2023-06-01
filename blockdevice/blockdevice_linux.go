@@ -17,7 +17,7 @@ import (
 	"github.com/siderolabs/go-retry/retry"
 	"golang.org/x/sys/unix"
 
-	"github.com/siderolabs/go-blockdevice/blockdevice/partition/gpt"
+	"github.com/mnicuda/go-blockdevice/blockdevice/partition/gpt"
 )
 
 // Linux headers constants.
