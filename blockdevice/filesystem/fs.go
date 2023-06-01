@@ -26,7 +26,7 @@ type SuperBlocker interface {
 	Is() bool
 	Offset() int64
 	Type() string
-    FSLabel() [0x10]uint8 // Merlin
+    FSLabel() string // Merlin
 	Encrypted() bool
 }
 

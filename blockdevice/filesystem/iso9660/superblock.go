@@ -46,6 +46,12 @@ func (sb *SuperBlock) Type() string {
 	return "iso9660"
 }
 
+// FSLabel implements the SuperBlocker interface.
+
+func (sb *SuperBlock) FSLabel() [0x10]uint8 {
+	return // TODO 
+}
+
 // Encrypted implements the SuperBlocker interface.
 func (sb *SuperBlock) Encrypted() bool {
 	return false
